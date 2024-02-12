@@ -21,6 +21,11 @@ body {
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */
@@ -1165,10 +1170,11 @@ form [type='radio'] {
 }
 
 .container {
-  width: 85%;
-  max-width: 1200px;
+  width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
+  flex: 1;
 }
 
 .container.container-fluid {
@@ -1183,6 +1189,7 @@ form [type='radio'] {
 }
 
 .flex-column {
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1262,6 +1269,7 @@ form [type='radio'] {
   padding-right: 15px;
   padding-left: 15px;
 }
+
 
 .col-auto {
   flex-grow: 1;
